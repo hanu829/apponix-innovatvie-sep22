@@ -1,12 +1,17 @@
-function marrage3(_a) {
-    var Imarrage3 = _a.prop;
-    console.log(Imarrage3);
+function marrage3(props) {
+    console.log(props);
 }
-marrage3({ gift: 'watch' });
-var glass = {
-    frame: 'squre',
-    shape: 'squre',
-    color: 'red'
-};
-console.log(glass);
-glass.spec;
+marrage3({ gift: 00 });
+// var glass:Iglass={
+// frame:'squre',
+// shape:'squre',
+// color:'red',
+// }
+// interface  Iglass{
+//     frame:string,
+//     shape:string,
+//     color:string,
+// spec1?:number
+// }
+// console.log(glass)
+// glass.spec2
