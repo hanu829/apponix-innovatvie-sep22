@@ -1,4 +1,5 @@
 import { MyH1, MyState } from "../../components"
+import { Rating1 } from "../../components/mui/Ratings/Rating1"
 
 // interface Itest{
 //     a:string
@@ -20,6 +21,7 @@ export const Home=()=>{
    <h1>my topics</h1>
    <ol>
     <li><MyState/></li>
+    <li><Rating1/></li>
    </ol>
    
    
