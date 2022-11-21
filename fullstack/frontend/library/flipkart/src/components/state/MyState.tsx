@@ -15,6 +15,7 @@ console.log(myarry)
     <input type="text" onChange={mychange} />
     
     ,<h1> {userinput}</h1>
+    
     {myarry.map((s:any)=>{
         return <><li>{s}</li></>
     })}
