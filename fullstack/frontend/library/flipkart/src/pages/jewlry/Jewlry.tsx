@@ -25,6 +25,7 @@ export const Jewlry: React.FC<Ijewlry> = (props) => {
             setLocalstate(a)
 
         })
+        
     }, [])
 
 

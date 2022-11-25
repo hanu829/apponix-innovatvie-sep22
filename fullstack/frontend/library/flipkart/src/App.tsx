@@ -1,19 +1,22 @@
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import { About, Contact, Home, Jewlry, MyLogin } from './pages'
+import { Layout } from './pages/layout'
 
-
-import { Contact, Home } from './pages'
-import { Jewlry } from './pages/jewlry/Jewlry'
 
 export const App = () => {
 
     return (<>
     <Router>
-        <Routes>
+    <Layout>
+        <Routes>      
        < Route path='/' element={<Home/>}/>
        < Route path='/contact' element={<Contact/>}/>
-       < Route path='/about' element={<h1>hello im about</h1>}/>
+       < Route path='/about' element={<About/>}/>
        < Route path='/jewlry' element={<Jewlry/>}/>
+       <Route path='/login' element={<MyLogin/>}/>
+    
         </Routes>
+        </Layout>
         </Router> 
     
     </>)

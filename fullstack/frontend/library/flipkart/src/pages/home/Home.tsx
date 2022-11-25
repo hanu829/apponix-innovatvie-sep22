@@ -28,18 +28,7 @@ export const Home = () => {
     return (<>
         <Container maxWidth="xl" >
 
-            <Grid
-                container
-                direction="column"
-                justifyContent="center"
-                alignItems="stretch"
-            >
-
-                <MyNavbar />
-
-
-
-            </Grid>
+        
 
             <Grid
                 container
