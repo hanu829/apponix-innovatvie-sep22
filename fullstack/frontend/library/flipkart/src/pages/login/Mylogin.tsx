@@ -1,5 +1,5 @@
 import { Container, Grid } from "@mui/material"
-import { MyAtocomplete } from "../../components"
+import { MyAtocomplete, Myform } from "../../components"
 
 export const MyLogin:React.FC<{}>=()=>{
     return <>
@@ -10,6 +10,10 @@ export const MyLogin:React.FC<{}>=()=>{
 <Grid> autocomple
 <MyAtocomplete/>
 
+</Grid>
+<Grid>
+  my form
+    <Myform/>
 </Grid>
     </Container>
     </>
