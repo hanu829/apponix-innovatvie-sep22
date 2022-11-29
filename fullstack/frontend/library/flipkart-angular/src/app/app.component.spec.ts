@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-example'`, () => {
+  it(`should have as title 'flipkart-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-example');
+    expect(app.title).toEqual('flipkart-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-example app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('flipkart-angular app is running!');
   });
 });

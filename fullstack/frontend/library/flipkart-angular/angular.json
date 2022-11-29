@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-example": {
+    "flipkart-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-example",
+            "outputPath": "dist/flipkart-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -24,11 +24,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+            "styles": ["./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
@@ -61,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-example:build:production"
+              "browserTarget": "flipkart-angular:build:production"
             },
             "development": {
-              "browserTarget": "angular-example:build:development"
+              "browserTarget": "flipkart-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-example:build"
+            "browserTarget": "flipkart-angular:build"
           }
         },
         "test": {
@@ -88,7 +87,6 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -98,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "eb5ffc30-5364-484d-a193-0af8bb50be37"
+    "analytics": "4f3a5c53-4802-410c-adff-fe0e22c673dd"
   }
 }
