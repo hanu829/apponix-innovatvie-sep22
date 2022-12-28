@@ -1,2 +1,3 @@
 const homeRoute=require('./home/home.routes')
-module.exports={homeRoute}
+const register=require('./auth/registeration/userReg.routes')
+module.exports={homeRoute,register}

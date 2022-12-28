@@ -3,11 +3,11 @@ import mongoose, { Schema } from "mongoose";
 
 var userStructure=new Schema({
     name:String,
-    age:Number,
-    chocalate:String
+    email:String,
+    password:String
 })
 
-module.exports=mongoose.model('users',userStructure)
+module.exports=mongoose.model('usersRegInfo',userStructure)
 
 
 
