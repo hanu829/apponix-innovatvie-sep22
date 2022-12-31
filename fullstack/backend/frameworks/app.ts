@@ -20,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'src/public/videos')))
 
 app.use('/api',endpoint.homeRoute)
 app.use('/api',endpoint.register)
+app.use('/api',endpoint.userlogin)
+
 
 
 

@@ -1,4 +1,63 @@
 
+<script>
+
+
+
+
+
+
+  const handleSubmit=async(name,email,password)=>{
+    var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+var urlencoded = new URLSearchParams();
+urlencoded.append("name", name);
+urlencoded.append("email", email);
+urlencoded.append("password", password);
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: urlencoded,
+  redirect: 'follow'
+};
+
+
+
+
+    var res=fetch("http://localhost:8005/api/register", requestOptions)
+  return await(await res).text()
+  .catch(error => console.log('error', error));
+  }
+
+handleSubmit('div1234','di@gmail.com','121313').then((data)=>{console.log(data)})
+  
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <video width="200px" height="200px" src="http://localhost:8003/1.mp4" controls></video>
 
 
@@ -28,4 +87,4 @@
     myfun()
 
 
-</script>
+</script> -->
