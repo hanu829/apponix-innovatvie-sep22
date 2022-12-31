@@ -4,7 +4,7 @@ var name=req.body.name
 var email=req.body.email
 var password=req.body.password
 savingUserInfoService(name,email,password)
-res.send('im working')
+res.status(200).send(200)
 }
 
 const savingUserInfoService=(name:any,email:any,password:any)=>{
