@@ -5,10 +5,6 @@ let img=req.files.img
 let discription=req.body.discription
 let title=req.body.title
 let price=req.body.price
-console.log(req.body)
-console.log(req.params)
-console.log(req.query)
-console.log(req.files.img.name)
 var myfilname=req.files.img.name
 fs.writeFile(`./src/public/img/${myfilname}`,req.files.img.data,()=>{
 console.log('oo')
