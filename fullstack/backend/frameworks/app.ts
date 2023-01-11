@@ -23,6 +23,7 @@ app.use('/api',endpoint.homeRoute)
 app.use('/api',endpoint.register)
 app.use('/api',endpoint.userlogin)
 app.use('/api',endpoint.sellerUploadProduct)
+app.use('/api',endpoint.getAllProducts)
 
 
 
