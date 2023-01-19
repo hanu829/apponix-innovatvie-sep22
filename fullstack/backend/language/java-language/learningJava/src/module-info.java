@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Apponix
+ *
+ */
+module learningJava {
+}
